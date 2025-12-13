@@ -54,7 +54,7 @@ const setupTextHover=(container,type)=>{
 };
 
 
-function Welcome() {
+const Welcome = () => {
     const titleRef= useRef(null);
     const subtitleRef= useRef(null);
 
