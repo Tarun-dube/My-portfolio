@@ -1,7 +1,7 @@
 import dayjs from "dayjs"
 import { navIcons, navLinks } from "#constants"      
 
-function Navbar() {
+const  Navbar = () => {
     return (
     <nav>
       <div>
