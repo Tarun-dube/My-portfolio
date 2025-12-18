@@ -1,14 +1,19 @@
 import { Dock, Navbar, Welcome } from '#components'
-import React from 'react'
+import { Terminal } from '#windows';
+import { gsap } from 'gsap';
+import { Draggable } from 'gsap/Draggable';
+gsap.registerPlugin(Draggable);
 
-function App() {
+const App = () => {
     return (
-    <div>
+    <main>
         <Navbar />
         <Welcome />
         <Dock />
-    </div>
-    )
-}
+ 
+        <Terminal />
+    </main>
+    );
+};
 
-export default App
+export default App;
